@@ -1,0 +1,53 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+figure {
+  background-color: rgb(30, 30, 77);
+}
+
+.menu li {
+  display: inline;
+  padding: 0.7rem;
+}
+
+.welcome {
+  background-image: url(../images/bg-img.png);
+  text-align: center;
+}
+
+.griglia {
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.card {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%; /* Rendi l'immagine responsive */
+  height: auto;
+  border-radius: 8px;
+}
+
+article {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+article img {
+  width: 100%; /* Rende l'immagine larga quanto il contenitore dell'articolo */
+  height: auto; /* Mantiene le proporzioni dell'immagine */
+  max-width: 500px; /* Limita la larghezza massima per evitare che immagini grandi si espandano oltre */
+}
