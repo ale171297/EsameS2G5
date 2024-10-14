@@ -4,20 +4,51 @@
 
 body {
   margin: 0;
-}
+  background-color: rgb(206, 219, 238);
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 
+  font-style: normal;
+}
+h1 {
+  font-size: x-large;
+  font-weight: bold;
+}
 figure {
   background-color: rgb(30, 30, 77);
+  padding-left: 1rem;
+}
+
+header h2 {
+  background-color: orangered;
+  color: #f4f4f4;
+  text-align: center;
+  padding: 1.2rem;
+  margin: 1rem;
+}
+header div {
+  background-color: rgb(25, 25, 41);
+}
+
+main {
+  background-color: #f4f4f4;
+  padding: 2rem;
+  margin: 1rem;
 }
 
 .menu li {
-  display: inline;
-  padding: 0.7rem;
+  display: inline-block;
+  padding: 1rem;
+  color: #f4f4f4;
 }
 
 .welcome {
-  background-image: url(../images/bg-img.png);
+  background-image: url(../images/bg-image.png);
   text-align: center;
+  padding: 1.5rem;
+  margin: 1rem;
+  color: #ffffff;
+  line-height: 3rem;
 }
 
 .griglia {
@@ -26,18 +57,18 @@ figure {
   justify-content: space-between;
   width: 100%;
 }
-
+.griglia h2 {
+  display: inline;
+}
 .card {
   background-color: #f4f4f4;
   padding: 1rem;
   text-align: center;
-  border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .card img {
-  width: 100%; /* Rendi l'immagine responsive */
-  height: auto;
+  width: 100%;
+  height: 100%;
   border-radius: 8px;
 }
 
@@ -47,7 +78,29 @@ article {
 }
 
 article img {
-  width: 100%; /* Rende l'immagine larga quanto il contenitore dell'articolo */
-  height: auto; /* Mantiene le proporzioni dell'immagine */
-  max-width: 500px; /* Limita la larghezza massima per evitare che immagini grandi si espandano oltre */
+  width: 100%;
+  height: auto;
+  max-width: max-content;
+}
+
+footer {
+  background-color: rgb(30, 30, 77);
+}
+#logo {
+  text-align: center;
+  padding: 1rem;
+}
+#backtoshop {
+  text-align: center;
+  background-color: rgb(25, 25, 41);
+  padding: 1rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+#backtoshop a {
+  color: #f4f4f4;
+  text-decoration: underline;
 }
